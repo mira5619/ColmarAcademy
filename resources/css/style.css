@@ -92,6 +92,11 @@ nav {
     text-transform: uppercase;
 }
 
+.logo img {
+    width: 27px;
+    height: 32px;
+}
+
 ul {
     display: flex;
 }
