@@ -263,6 +263,11 @@ aside {
     color: #003399;
 }
 
+/*.card:hover {
+    background-color: #DBE4EE;
+    border-left: 1px solid #d6d6d6;
+}*/
+
 .card {
     display: flex;
     max-width: 100%;
@@ -277,10 +282,6 @@ aside {
     border-left: 1px solid #d6d6d6;
 }
 
-.info .card:last-child {
-    background-color: #DBE4EE;
-}
-
 .info .text a {
     color: #003399;
 }
@@ -292,6 +293,10 @@ aside {
 .image-container {
     max-width: 35%;
     padding: 16px 0 16px 16px;
+}
+
+.info .card:hover {
+    background-color: #DBE4EE;
 }
 
 @media only screen and (max-width: 620px) {
@@ -316,10 +321,6 @@ aside {
     .image-container {
         max-width: 100%;
         padding: 16px;
-    }
-
-    .info .card:last-child {
-    background-color: #eef0f3;
     }
 }
 
@@ -414,7 +415,7 @@ video {
    max-height: 168px;
 }
 
-.thesis-content aside .card:first-child {
+.thesis .card:hover {
     background-color: #DBE4EE;
 }
 
