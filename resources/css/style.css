@@ -89,9 +89,9 @@ nav {
     text-transform: uppercase;
 }
 
-.blue {
+/*.blue {
     color: #054a91;
-}
+}*/
 
 .logo img {
     width: 27px;
@@ -132,6 +132,7 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 620px) {
+
     .mobile {
         display: block;
     }
@@ -157,6 +158,7 @@ section {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    /*border: 1px solid #d6d6d6;*/
 }
 
 .banner {
@@ -206,7 +208,8 @@ img {
 }
 
 aside {
-    max-width: 423px;
+    /*max-width: 423px;*/
+    max-width: 40%;
     padding: 16px 0;
 
 }
@@ -217,6 +220,10 @@ aside {
     flex-direction: column;
     justify-content: center;
 
+}
+
+.banner .text {
+    padding-left: 0;
 }
 
 .container h2 {
@@ -234,13 +241,19 @@ aside {
     }
 
     .banner .container {
+        padding: 0;
 
-        height: 180px;
-        background-color: #3E7CB1;
+        /*height: 180px;
+        background-color: #3E7CB1;*/
     }
 
+    .banner .text {
+    padding-left: 16px;
+}
+
     .banner img {
-        display: none;
+        /*display: none;*/
+        max-width: 100%;
     }
 
     aside {
@@ -268,9 +281,14 @@ aside {
     border-left: 1px solid #d6d6d6;
 }*/
 
+.information-main .card {
+    border-bottom: 1px solid #d6d6d6;
+}
+
 .card {
     display: flex;
     max-width: 100%;
+    /*border: 1px solid #d6d6d6;*/
 }
 
 .card p {
@@ -306,11 +324,16 @@ aside {
 
     .information-main aside {
         padding-top: 0;
-        padding-bottom: 32px;
+        padding-bottom: 0;
     }
 
     .card {
         display: block;
+    }
+
+    .information-main .card {
+        padding-bottom: 3rem;
+        border: none;
     }
 
     .information-main .text {
@@ -335,7 +358,8 @@ aside {
 .courses-container {
     display: flex;
     flex-wrap: wrap;
-    width: 85%;
+   /* width: 85%;*/
+   padding: 0 72px 32px 72px;
 }
 
 .course {
@@ -343,8 +367,13 @@ aside {
     flex-direction: column;
     max-height: 50%;
     background-color: white;
-    margin: 0 1rem 1rem 1rem;
+    /*margin: 0 1rem 1rem 1rem;*/
+    margin: 1rem;
     flex: 1 1 29%;
+}
+
+.courses h2 {
+    padding-bottom: 1rem;
 }
 
 .course p {
@@ -361,7 +390,7 @@ aside {
     .courses-container {
         width: 100%;
         display: block;
-        padding-bottom: 32px;
+        padding: 0 0 16px 0;
     }
 
     .course {
@@ -372,6 +401,10 @@ aside {
         color: white;
     }
 
+    .course .text {
+        padding-bottom: 24px;
+    }
+
     .course a:hover {
         background-color: #054a91;
         box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5);
@@ -380,7 +413,7 @@ aside {
     }
 
     .courses h2 {
-        padding-bottom: 16px;
+        padding-bottom: 0;
     }
 }
 
@@ -442,7 +475,7 @@ footer a:hover {
 @media only screen and (max-width: 620px) {
 
     .thesis-content .container {
-        padding: 32px 0  24px 0;
+        padding: 16px 0  24px 0;
     }
 
     .left {
